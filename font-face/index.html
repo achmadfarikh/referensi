@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Font Face</title>
+	<!-- <link rel="stylesheet" href="css/css3_02_fontface.css"> -->
+	<style>
+		body, h1 {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 1000px;
+			height: 1000px;
+			margin: 0 auto;
+			background-color: white;
+			background: radial-gradient(circle at top, white,lightgrey);
+			background-repeat: no-repeat;
+		}
+	/* 					-- Syntac untuk Font-Face --
+		@font-face {
+			font-family: 'Nama Font Baru';
+					-- Pilih salah satu scr dibawah ini --
+			src: url('folder/FontBaru.ttf') format('truetype');
+			src: url('folder/FontBaru.woff') format('woff');
+			src: url('folder/FontBaru.woff2') format('woff2');
+			src: url('folder/FontBaru.svg#svgFontName') format('svg');
+			src: url('folder/FontBaru.eot');
+			src: url('folder/FontBaru.eot?#iefix') format('embedded-opentype');
+		}
+	*/
+	/* format syntac copy dari css font nya */
+		@font-face {
+    		font-family: 'Nabla';
+   			src: url('fonts/Nabla/nabla-regular-variablefont_edptehlt-webfont.woff') format('woff');
+    		font-weight: normal;
+    		font-style: normal;
+		}
+		h1 {
+			font: italic small-caps 50px "nabla", arial;
+			text-align: center;
+			color: orange;
+			padding: 33px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Hello Semuanya</h1>
+	</div>
+	
+</body>
+</html>
